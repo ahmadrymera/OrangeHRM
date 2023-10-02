@@ -1,5 +1,8 @@
 # OrangeHRM Automation Test
 
+## Test case
+https://docs.google.com/spreadsheets/d/1EyXO5QlaWDJFU2R2Xrp3h7uwHiQd47KSYn8FGh5ROq8/edit?usp=sharing
+
 ## How to install
 
 1. Clone the repository and navigate to the folder
