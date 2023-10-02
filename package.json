@@ -1,0 +1,28 @@
+{
+  "name": "orangehrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:login": "npx cypress run --env tags=@login",
+    "test:add-user": "npx cypress run --env tags=@add-user",
+    "test:all": "cypress run --spec \"**/*.feature\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "@faker-js/faker": "^8.1.0",
+    "cypress": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/tests/[filepath].js",
+      "cypress/tests/[filepart]/common.js",
+      "cypress/step_definitions/**/*.js"
+    ],
+    "filterSpecs": true
+  }
+}
